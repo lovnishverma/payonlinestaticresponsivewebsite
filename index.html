@@ -3,14 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Online Shoping Website"
-    />
-    <meta
-      name="keywords"
-      content="Online Shoping Website"
-    />
+    <meta name="description" content="Online Shoping Website" />
+    <meta name="keywords" content="Online Shoping Website" />
 
     <title>Online Shoping Website</title>
     <link
@@ -26,230 +20,231 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-     <header class="header">
-  <div class="header-container">
-    <div class="header-logo">
-      <a href="index.htm">
-        
-      </a>
-              <img
-          src="https://cdn.glitch.global/74fd2e5a-d17a-4300-95da-c5ff21bfefa5/sai_college_logo.png?v=1738592490863"
-          class="logo"
-          alt="College Logo"
+    <header class="header">
+      <div class="header-container">
+        <div class="header-logo">
+          <a href="index.htm"> </a>
+          <img
+            src="https://cdn.glitch.global/0df5ecc0-b9a0-4b08-b8f7-a7a8cbda4ff3/Shopimg.jfif?v=1739343445604"
+            class="logo"
+            alt="shoping logo"
+          />
+        </div>
+        <nav class="header-nav">
+          <ul class="header-menu">
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="modes.htm">Various Modes</a></li>
+            <li><a href="benefits.htm">Benefits</a></li>
+            <li><a href="steps.htm">Steps in Transaction</a></li>
+            <li><a href="security.htm">Security Issues</a></li>
+            <li><a href="Paymentgateways.htm">Payment Gateway</a></li>
+            <li><a href="rbi.htm">RBI Guidelines</a></li>
+            <li><a href="contact.htm">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .header {
+        background-color: #cc101a;
+        color: #ffffff;
+        padding: 20px 0;
+      }
+
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .header-logo img {
+        height: 60px;
+        max-width: 100%;
+      }
+
+      .header-nav .header-menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 25px;
+      }
+
+      .header-nav .header-menu li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      .header-nav .header-menu li a:hover {
+        color: #ffdddd;
+      }
+
+      @media (max-width: 768px) {
+        .header-nav .header-menu {
+          flex-direction: column;
+          gap: 15px;
+        }
+      }
+    </style>
+    <main>
+      <section class="contact-section">
+        <h1>Contact Us</h1>
+        <address>
+          <p><strong>Rogermine Web Solutions Private Limited</strong></p>
+          <p>Payonline.com</p>
+          <p>Phone: 01823-5018160</p>
+          <p>Mobile: 98888-39532</p>
+          <p>FAX: 01823-753099</p>
+          <p>
+            Email:
+            <a href="mailto:rogermine@payonline.com">rogermine@payonline.com</a>
+          </p>
+        </address>
+        <img
+          src="https://cdn.glitch.global/0df5ecc0-b9a0-4b08-b8f7-a7a8cbda4ff3/Contact%20Photo.webp?v=1739342300470"
+          alt="Contact Image"
+          class="contact-image"
         />
-    </div>
-    <nav class="header-nav">
-      <ul class="header-menu">
-        <li><a href="index.htm">Home</a></li>
-        <li><a href="modes.htm">Various Modes</a></li>
-        <li><a href="benefits.htm">Benefits</a></li>
-        <li><a href="steps.htm">Steps in Transaction</a></li>
-        <li><a href="security.htm">Security Issues</a></li>
-        <li><a href="Paymentgateways.htm">Payment Gateway</a></li>
-        <li><a href="rbi.htm">RBI Guidelines</a></li>
-        <li><a href="contact.htm">Contact Us</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
+        <form method="POST" action="submit-form.php" class="contact-form">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
 
-.header {
-  background-color: #cc101a;
-  color: #ffffff;
-  padding: 20px 0;
-}
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Your message here"
+            required
+          ></textarea>
 
-.header-logo img {
-  height: 60px;
-  max-width: 100%;
-}
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
 
-.header-nav .header-menu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 25px;
-}
+    <footer>
+      <p>&copy; 2025 Payonline. All Rights Reserved.</p>
+      <p>By: Ritika, Raman</p>
+    </footer>
 
-.header-nav .header-menu li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
+    <style>
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        background-color: #f7f7f7;
+        color: #333;
+      }
 
-.header-nav .header-menu li a:hover {
-  color: #ffdddd;
-}
+      .contact-section {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
 
-@media (max-width: 768px) {
-  .header-nav .header-menu {
-    flex-direction: column;
-    gap: 15px;
-  }
-}
-</style>
-  <main>
-  <section class="contact-section">
-    <h1>Contact Us</h1>
-    <address>
-      <p><strong>Rogermine Web Solutions Private Limited</strong></p>
-      <p>Payonline.com</p>
-      <p>Phone: 01823-5018160</p>
-      <p>Mobile: 98888-39532</p>
-      <p>FAX: 01823-753099</p>
-      <p>
-        Email: <a href="mailto:rogermine@payonline.com">rogermine@payonline.com</a>
-      </p>
-    </address>
-    <img
-      src="https://cdn.glitch.global/0df5ecc0-b9a0-4b08-b8f7-a7a8cbda4ff3/Contact%20Photo.webp?v=1739342300470"
-      alt="Contact Image"
-      class="contact-image"
-    />
+      .contact-section h1 {
+        font-size: 2rem;
+        color: #cc101a;
+        text-align: center;
+        margin-bottom: 20px;
+      }
 
-    <form method="POST" action="submit-form.php" class="contact-form">
-      <label for="name">Name:</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Enter your name"
-        required
-      />
+      .contact-section address {
+        font-style: normal;
+        margin-bottom: 20px;
+        line-height: 1.8;
+      }
 
-      <label for="email">Email:</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Enter your email"
-        required
-      />
+      .contact-section a {
+        color: #cc101a;
+        text-decoration: none;
+      }
 
-      <label for="message">Message:</label>
-      <textarea
-        id="message"
-        name="message"
-        rows="5"
-        placeholder="Your message here"
-        required
-      ></textarea>
+      .contact-image {
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0;
+        border-radius: 10px;
+      }
 
-      <button type="submit">Submit</button>
-    </form>
-  </section>
-</main>
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
 
-<footer>
-  <p>&copy; 2025 Payonline. All Rights Reserved.</p>
-  <p>By: Ritika, Raman</p>
-</footer>
+      .contact-form label {
+        font-weight: bold;
+      }
 
-<style>
-body {
-  margin: 0;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
-}
+      .contact-form input,
+      .contact-form textarea {
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+      }
 
-.contact-section {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+      .contact-form button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: white;
+        background-color: #cc101a;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
 
-.contact-section h1 {
-  font-size: 2rem;
-  color: #cc101a;
-  text-align: center;
-  margin-bottom: 20px;
-}
+      .contact-form button:hover {
+        background-color: #a80e17;
+      }
 
-.contact-section address {
-  font-style: normal;
-  margin-bottom: 20px;
-  line-height: 1.8;
-}
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #cc101a;
+        color: white;
+        font-size: 0.9rem;
+        margin-top: 50px;
+      }
 
-.contact-section a {
-  color: #cc101a;
-  text-decoration: none;
-}
-
-.contact-image {
-  max-width: 100%;
-  height: auto;
-  margin: 20px 0;
-  border-radius: 10px;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact-form label {
-  font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.contact-form button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: white;
-  background-color: #cc101a;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #a80e17;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #cc101a;
-  color: white;
-  font-size: 0.9rem;
-  margin-top: 50px;
-}
-
-footer p {
-  margin: 5px 0;
-}
-</style>
+      footer p {
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+</html>
