@@ -3,33 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Online Shopping Website" />
-    <meta name="keywords" content="Online Shopping, E-commerce, Payment Methods" />
-     <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://cdn.glitch.global/0df5ecc0-b9a0-4b08-b8f7-a7a8cbda4ff3/shopping.jpg?v=1739342597642"
-    />
+    <meta name="description" content="Pyaonline - Your Ultimate Online Shopping Destination" />
+    <meta name="keywords" content="Online Shopping, E-commerce, Payment Methods, Secure Transactions" />
+    
     <title>Pyaonline - Online Shopping</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/0df5ecc0-b9a0-4b08-b8f7-a7a8cbda4ff3/shopping.jpg?v=1739342597642" />
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+      .logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      .nav-link i {
+        margin-right: 5px;
+      }
+      .content {
+        padding: 30px;
+      }
+      .footer-text {
+        margin-bottom: 0;
+      }
+    </style>
   </head>
 
   <body>
     <!-- Header -->
     <header class="d-flex justify-content-between align-items-center p-3 bg-primary text-white">
       <div class="d-flex align-items-center">
-        <img src="https://cdn.glitch.global/0df5ecc0-b9a0-4b08-b8f7-a7a8cbda4ff3/Shopimg.jfif?v=1739343445604" class="logo me-2" alt="Shopping Logo" style="width: 50px; height: 50px; border-radius: 50%;">
+        <img src="https://cdn.glitch.global/0df5ecc0-b9a0-4b08-b8f7-a7a8cbda4ff3/Shopimg.jfif?v=1739343445604" class="logo me-2" alt="Shopping Logo">
         <h1 class="m-0 fs-4">Pyaonline</h1>
       </div>
-     
     </header>
 
     <!-- Navbar -->
@@ -41,51 +53,48 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="modes.html"><i class="fa fa-credit-card"></i> Various Modes</a></li>
-            <li class="nav-item"><a class="nav-link" href="benefits.html"><i class="fa fa-check-circle"></i> Benefits</a></li>
-            <li class="nav-item"><a class="nav-link" href="steps.html"><i class="fa fa-list"></i> Steps in Transaction</a></li>
-            <li class="nav-item"><a class="nav-link" href="security.html"><i class="fa fa-lock"></i> Security Issues</a></li>
-            <li class="nav-item"><a class="nav-link" href="Paymentgateways.html"><i class="fa fa-money-bill-wave"></i> Payment Gateway</a></li>
+            <li class="nav-item"><a class="nav-link" href="modes.html"><i class="fa fa-credit-card"></i> Payment Modes</a></li>
+            <li class="nav-item"><a class="nav-link" href="benefits.html"><i class="fa fa-thumbs-up"></i> Benefits</a></li>
+            <li class="nav-item"><a class="nav-link" href="steps.html"><i class="fa fa-list"></i> Transaction Steps</a></li>
+            <li class="nav-item"><a class="nav-link" href="security.html"><i class="fa fa-lock"></i> Security</a></li>
+            <li class="nav-item"><a class="nav-link" href="paymentgateways.html"><i class="fa fa-money-bill-wave"></i> Payment Gateway</a></li>
             <li class="nav-item"><a class="nav-link" href="rbi.html"><i class="fa fa-university"></i> RBI Guidelines</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-envelope"></i> Contact Us</a></li>
           </ul>
         </div>
       </div>
     </nav>
-  <main>
-    <section>
-      <h1>Payment Gateways</h1>
-      <h2>What Is a Payment Gateway?</h2>
-      <p>
-        A payment gateway is a technology used by merchants to accept debit or credit card purchases from customers.
-        It includes physical card-reading devices found in brick-and-mortar stores and online payment portals.
-        Payment gateways can also accept phone-based payments using QR codes or Near Field Communication (NFC).
-      </p>
 
-      <h2>Main Features of Payment Gateways</h2>
-      <ul>
-        <li>Collects consumer payment information.</li>
-        <li>Includes POS terminals in physical stores for card and smartphone payments.</li>
-        <li>Provides online checkout portals for card information entry.</li>
-        <li>Distinct from payment processors, which collect payments for merchants.</li>
-        <li>Facilitates payments in cryptocurrencies like Bitcoin.</li>
-      </ul>
-        <img
-          src="https://cdn.glitch.global/0df5ecc0-b9a0-4b08-b8f7-a7a8cbda4ff3/payment-gateway-generic_990x640.png?v=1739944763057"class="img-fluid mb-50"width="500"height="300"
-          alt="Contact Image"
-          class="contact-image"
-        />
-      <h2>How Payment Gateways Work</h2>
-      <p>
-        Payment gateways are the front-end technology that sends customer information to the merchant-acquiring bank.
-        They have evolved from requiring paper signatures to accepting PINs and contactless purchases using smartphones.
-      </p>
-    </section>
-  </main>
+    <!-- Main Content -->
+    <main class="container content">
+      <section>
+        <h2><i class="fa fa-credit-card"></i> Payment Gateways</h2>
+        <p>
+          A payment gateway is a technology that allows merchants to accept debit or credit card payments securely.
+          It can be a physical device in a store or an online checkout portal.
+        </p>
+
+        <h3><i class="fa fa-star"></i> Key Features</h3>
+        <ul>
+          <li><i class="fa fa-check"></i> Secure transaction processing.</li>
+          <li><i class="fa fa-check"></i> Supports multiple payment methods.</li>
+          <li><i class="fa fa-check"></i> Ensures encryption and fraud protection.</li>
+          <li><i class="fa fa-check"></i> Allows seamless online and offline transactions.</li>
+        </ul>
+
+        <img src="https://cdn.glitch.global/0df5ecc0-b9a0-4b08-b8f7-a7a8cbda4ff3/payment-gateway-generic_990x640.png?v=1739944763057" class="img-fluid mb-3" alt="Payment Gateway">
+
+        <h3><i class="fa fa-cogs"></i> How It Works</h3>
+        <p>
+          Payment gateways securely send customer payment details to the merchant's acquiring bank, ensuring
+          smooth and encrypted transactions.
+        </p>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-      <p>2025 © Pyaonline. All Rights Reserved.</p>
+      <p class="footer-text">2025 © Pyaonline. All Rights Reserved.</p>
       <marquee behavior="alternate" class="fw-bold text-warning">Designed By: Ritika and Raman</marquee>
     </footer>
 
