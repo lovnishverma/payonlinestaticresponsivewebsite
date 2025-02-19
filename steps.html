@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Online Shoping Website" />
+    <meta name="keywords" content="Online Shoping Website" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    #table1 {
+      width: 100%;
+    }
+    
+    /* Logo style */
+    #logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    /* Menu bar padding */
+    #table2 td {
+      padding-right: 15px;
+    }
+
+    /* Footer at the bottom */
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #CC101A;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    marquee {
+      font-weight: bold;
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header and logo -->
+  <div id="logo">
+    <img src="images/titlebar.jpg" width="150" height="50" alt="Logo">
+  </div>
+
+  <table border="0" width="100%" id="table1">
+    <tr>
+      <td height="43" align="center">
+        <img src="images/titlebar.jpg" width="1240" height="93" alt="Title Bar">
+      </td>
+    </tr>
+
+    <tr>
+      <td width="98%" colspan="3" height="47">
+        <table border="0" id="table2" width="100%" height="44">
+          <tr>
+            <td width="44">&nbsp;</td>
+            <td align="center"><a href="index.htm"><span style="text-decoration: none; color: #CC101A;">Home</span></a></td>
+            <td align="center"><a href="modes.htm" style="color: #CC101A;">Various Modes</a></td>
+            <td align="center"><a href="beneifts.htm" style="color: #CC101A;">Benefits</a></td>
+            <td align="center"><a href="steps.htm" style="color: #CC101A;">Steps in Transaction</a></td>
+            <td align="center"><a href="security.htm" style="color: #CC101A;">Security Issues</a></td>
+            <td align="center"><a href="Paymentgateways.htm" style="color: #CC101A;">Payment Gateway</a></td>
+            <td align="center"><a href="rbi.htm" style="color: #CC101A;">RBI Guidelines</a></td>
+            <td align="center"><a href="contact.htm" style="color: #CC101A;">Contact Us</a></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    
+    <!-- Page content -->
+    <tr>
+      <td width="98%" colspan="3">
+        <table border="0" width="100%" bgcolor="#FAD3C8">
+          <tr>
+            <td colspan="3" bgcolor="#FAD3D8">
+              <h1>Steps in an Online Transaction</h1>
+            </td>
+          </tr>
+          <tr>
+            <td width="3%" bgcolor="#FAD3D8"></td>
+            <td bgcolor="#FAD3D8">
+              <p>The following are the steps involved in Online Transaction:</p>
+              <ol>
+                <li>Registration: The consumer has to register online to buy a particular good or service.</li>
+                <li>Placing an Order: Customers put the desired products in their shopping cart and proceed to payment.</li>
+                <li>Payment: Various payment options are available like Cash on Delivery, Cheque, Net Banking, etc.</li>
+              </ol>
+            </td>
+            <td width="4%" bgcolor="#FAD3D8"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Footer -->
+  <footer>
+    <p>2024 © Payonline. All Rights Reserved</p>
+    <marquee behavior="alternate" bgcolor="#CC101A" width="588" height="20">By: Ritika & Ramandeep Kaur</marquee>
+  </footer>
+</body>
+</html>
